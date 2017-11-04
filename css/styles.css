@@ -1,10 +1,165 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans|Source+Sans+Pro');
 
-
-body{
-  /* exemplo fontes */
-  font-family: 'Source Sans Pro', sans-serif;
-  font-family: 'Open Sans', sans-serif;
+*{
+  box-sizing: border-box;
+  margin: 0;
 }
 
+body{
+  font-family: 'Open Sans', sans-serif;
+  padding: 0;
+  margin: 0 auto;
+}
 
+h1, h2, h3, h4 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 500;
+}
+
+nav.menu {
+  background: #222426;
+}
+
+header.apresentacao {
+  background-image: url('../img/header/bg.png');
+}
+
+header.apresentacao section {
+  text-align: center;
+  color: #fff;
+}
+
+header.apresentacao section h1 {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 30.9pt;
+  font-weight: 300;
+}
+
+header.apresentacao section p {
+  color: #7d848a;
+  font-weight: lighter;
+  font-size: 9.51pt;
+}
+
+header.apresentacao form > span {
+  color: #5d81b6;
+  font-style: italic;
+  font-size: 8.9pt;
+}
+
+header.apresentacao .campos input, 
+header.apresentacao .campos textarea  {
+  width: 100%;
+  margin: 0.3em 0;
+  padding: 0.8em 0.3em;
+  background: #444648;
+  border: none;
+  border-radius: 4px;
+  font-size: 15pt;
+  color: #f8f8f8;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+header.apresentacao .campos input[type="submit"] {
+  background: #6fa5f7;
+  color: #fff;
+}
+
+.apresentacao, main {
+  padding: 1em;
+}
+
+.skils {
+  display: none;
+}
+
+h2 {
+  font-weight: 300;
+  text-align: center;
+}
+
+.diferenciais > header > h2{
+  font-size: 21.5pt;
+}
+
+.diferenciais > header p,
+.diferenciais > header span {
+  font-size: 12pt;
+  text-align: center;
+  display: inherit;
+}
+
+.diferenciais > header p{
+  font-weight: bold;
+  color: #555a69;
+}
+.diferenciais > header span{
+  color: #899097;
+}
+
+.diferenciais .dif-boxes > div {
+  padding: 4em 1em;
+  color: #fff;
+  margin: 1em 0;
+  position: relative;
+}
+
+.diferenciais .dif-boxes > div h3{
+  font-size: 24pt;
+}
+
+.diferenciais .dif-boxes > div p{
+  font-size: 11pt;
+  margin: 2em 0 0;
+}
+
+.diferenciais .dif-boxes > div .number {
+  position: absolute;
+  padding: 0.3em 0.7em;
+  background: rgba(166, 189, 189, 0.8);
+  color: #fff;
+  top: 0;
+  left: 0;
+  font-size: 22pt;
+  font-weight: 800;
+}
+
+.diferenciais .dif-boxes > div:nth-child(1){
+  background: #3598c1;
+}
+.diferenciais .dif-boxes > div:nth-child(2){
+  background: #414a53;
+}
+.diferenciais .dif-boxes > div:nth-child(3){
+  background: #8161e7;
+}
+
+.servicos h2 {
+  font-size: 24pt;
+  text-align: left;
+}
+
+.servicos .slide > div {
+  background: #f8f8f8;
+  border: 1px solid #efeeee;
+  padding: 1.5em 1.5em 2em;
+  margin: 1em 0;
+}
+
+.servicos .slide > div > h4 {
+  color: #6fa5f7;
+  font-weight: 600;
+  font-size: 18pt;
+  width: 80%;
+  margin: 0.2em 0 1.5em 0;
+}
+.servicos .slide > div > p {
+  color: #7e7e7e;
+  font-size: 14pt;
+  line-height: 2em;
+}
+
+footer {
+  background: #333b43;
+  color: #797d8c;
+}

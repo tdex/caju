@@ -6,119 +6,149 @@
   <title>Caju - Front-End</title>
   <meta name="description" content="The HTML5 Herald">
   <meta name="author" content="Tarcísio Deschamps Silva">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
-  <header class="apresentacao">
+  <div class="content">
     <nav class="menu">
+      <ul>
+        <li>
+          <a href="#">Conheça</a>
+        </li>
+        <li>
+          <a href="#">Vantagens</a>
+        </li>
+        <li>
+          <a href="#">Cases</a>
+        </li>
+        <li>
+          <a href="#">Fale Conosco</a>
+        </li>
+      </ul>
 
+      <span>
+        <a href="tel:+558887601940">+55 (888) 760 1940</a>
+      </span>
     </nav>
 
-    <section>
-      <h1>Better Lorem Ipsum</h1>
-      <p>O teste é uma ferramenta projetada para organizações que desejam crescer otimizando recursos.</p>
+    <header class="apresentacao">
 
-      <form action="">
-        <span>Os campos com ( * ) são de obrigatoriedade.</span>
+      <section>
+        <h1>Better Lorem Ipsum</h1>
+        <p>O teste é uma ferramenta projetada para organizações que desejam crescer otimizando recursos.</p>
+
+        <form action="enviar()" method="post">
+          <span>Os campos com ( * ) são de obrigatoriedade.</span>
+          <div class="campos">
+            <input type="text" name="nome" id="nome" placeholder="NOME*">
+            <input type="email" name="email" id="email" placeholder="E-MAIL*">
+            <input type="text" name="telefone" id="telefone" placeholder="TELEFONE">
+            <textarea name="mensagem" id="mensagem" cols="30" rows="3" placeholder="MENSAGEM"></textarea>
+            <input type="submit" value="ENVIAR">
+          </div>
+        </form>
+      </section>
+    </header>
+    <main>
+      <section class="skils">
         <div>
-          <input type="email" name="email" id="email">
-          <input type="password" name="nome" id="nome">
-          <input type="password" name="sobrenome" id="sobrenome">
-          <textarea name="mensagem" id="mensagem" cols="30" rows="3"></textarea>
-          <input type="submit" value="ENVIAR">
-        </div>
-      </form>
-    </section>
-  </header>
-  <main>
-    <section class="skils">
-      <div>
-        <figure>
-          <img src="" alt="">
-          <figcaption></figcaption>
-        </figure>
-        <h3>Gestão Médica</h3>
-        <p>Desenvolvido para ser uma ferramenta de apoio aos processos e decisões...</p>
-      </div>
-      <div>
-        <figure>
-          <img src="" alt="">
-          <figcaption></figcaption>
-        </figure>
-        <h3>Monitoramento</h3>
-        <p>A inteligência de gestão de processos que aprendemos nos vários anos...</p>
-      </div>
-      <div>
-        <figure>
-          <img src="" alt="">
-          <figcaption></figcaption>
-        </figure>
-        <h3>Integração</h3>
-        <p>Os processos administrativos e médicos são únicos e precisam de uma visão...</p>
-      </div>
-      <div>
-        <figure>
-          <img src="" alt="">
-          <figcaption></figcaption>
-        </figure>
-        <h3>Usabilidade</h3>
-        <p>Precisa ser fácil de usar. Não queremos profissionais de sistemas...</p>
-      </div>
-    </section>
-
-    <section class="diferenciais">
-      <header>
-        <h2>Nossos diferenciais competitivos</h2>
-        <p>Speed up the line with quick, easy modifiers</p>
-        <span>Light soy, extra noodles--item modifiers make it simple and efficient to get your customers' orders just right.</span>
-      </header>
-
-      <article>
-        <div>
-          <h3>Pensado para ser amigável</h3>
-          <p></p>
+          <figure>
+            <img src="" alt="">
+            <figcaption></figcaption>
+          </figure>
+          <h3>Gestão Médica</h3>
+          <p>Desenvolvido para ser uma ferramenta de apoio aos processos e decisões...</p>
         </div>
         <div>
-          <h3>Elimina tarefas repetitivas</h3>
-          <p></p>
+          <figure>
+            <img src="" alt="">
+            <figcaption></figcaption>
+          </figure>
+          <h3>Monitoramento</h3>
+          <p>A inteligência de gestão de processos que aprendemos nos vários anos...</p>
         </div>
         <div>
-          <h3>Focado em processos</h3>
-          <p></p>
-        </div>
-      </article>
-    </section>
-
-    <section class="servicos">
-      <header>
-        <h2>Nossos Serviços</h2>
-      </header>
-
-      <div class="slide">
-        <div>
-          <h4>Elimina tarefas repetitivas</h4>
-          <p>Speed up the line with quick, easy modifiers Light soy, extra noodles.</p>
+          <figure>
+            <img src="" alt="">
+            <figcaption></figcaption>
+          </figure>
+          <h3>Integração</h3>
+          <p>Os processos administrativos e médicos são únicos e precisam de uma visão...</p>
         </div>
         <div>
-          <h4>Elimina tarefas repetitivas</h4>
-          <p>Speed up the line with quick, easy modifiers Light soy, extra noodles.</p>
+          <figure>
+            <img src="" alt="">
+            <figcaption></figcaption>
+          </figure>
+          <h3>Usabilidade</h3>
+          <p>Precisa ser fácil de usar. Não queremos profissionais de sistemas...</p>
         </div>
-        <div>
-          <h4>Elimina tarefas repetitivas</h4>
-          <p>Speed up the line with quick, easy modifiers Light soy, extra noodles.</p>
+      </section>
+
+      <section class="diferenciais">
+        <header>
+          <h2>Nossos diferenciais competitivos</h2>
+          <p>Speed up the line with quick, easy modifiers</p>
+          <span>Light soy, extra noodles--item modifiers make it simple and efficient to get your customers' orders just right.</span>
+        </header>
+
+        <article class="dif-boxes">
+          <div>
+            <div class="number">1</div>
+            <h3>Pensado para ser amigável</h3>
+            <p>Speed up the line with quick, easy modifiers Light soy, extra noodles--item modifiers make it simple and efficient
+              to get your customers' orders just right.</p>
+          </div>
+          <div>
+            <div class="number">2</div>
+            <h3>Elimina tarefas repetitivas</h3>
+            <p>Speed up the line with quick, easy modifiers Light soy, extra noodles.</p>
+          </div>
+          <div>
+            <div class="number">3</div>
+            <h3>Focado em processos</h3>
+            <p>Speed up the line with quick, easy modifiers Light soy, extra noodles--item modifiers make it simple and efficient
+              to get your customers' orders just right.</p>
+            <p>Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado
+              desde o século XVI, quando um impressor desconhecido pegou uma bandeja de tipos e os embaralhou para fazer
+              um livro.
+            </p>
+          </div>
+        </article>
+      </section>
+
+      <section class="servicos">
+        <header>
+          <h2>Nossos Serviços</h2>
+        </header>
+
+        <div class="slide">
+          <div>
+            <h4>Elimina tarefas repetitivas</h4>
+            <p>Speed up the line with quick, easy modifiers Light soy, extra noodles.</p>
+          </div>
+          <div>
+            <h4>Elimina tarefas repetitivas</h4>
+            <p>Speed up the line with quick, easy modifiers Light soy, extra noodles.</p>
+          </div>
+          <div>
+            <h4>Elimina tarefas repetitivas</h4>
+            <p>Speed up the line with quick, easy modifiers Light soy, extra noodles.</p>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-  </main>
+    </main>
 
-  <footer>
+    <footer>
+      <p>&reg; 2015 Caju Tecnologia</p>
+    </footer>
+  </div>
 
-  </footer>
-
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.17.0/dist/jquery.validate.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.17.0/dist/additional-methods.min.js"></script>
   <script src="js/scripts.js"></script>
