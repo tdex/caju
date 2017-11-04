@@ -20,6 +20,8 @@ nav.menu {
   background: #222426;
 }
 
+
+
 header.apresentacao {
   background-image: url('../img/header/bg.png');
 }
@@ -51,18 +53,32 @@ header.apresentacao .campos input,
 header.apresentacao .campos textarea  {
   width: 100%;
   margin: 0.3em 0;
-  padding: 0.8em 0.3em;
+  padding: 0.8em 0.3em 0.8em 2.2em;
   background: #444648;
   border: none;
   border-radius: 4px;
   font-size: 15pt;
   color: #f8f8f8;
   font-family: 'Source Sans Pro', sans-serif;
+  position: relative
 }
 
 header.apresentacao .campos input[type="submit"] {
   background: #6fa5f7;
   color: #fff;
+  padding: 0.8em 0.3em 0.8em;
+}
+
+header.apresentacao .campos > div{
+  position: relative;
+}
+
+header.apresentacao .campos > div > img{
+  position: absolute;
+  z-index: 2;
+  top: 1.7em;
+  left: 1em;
+  pointer-events: none;
 }
 
 .apresentacao, main {
@@ -162,4 +178,26 @@ h2 {
 footer {
   background: #333b43;
   color: #797d8c;
+  text-align: center;
+}
+
+footer > * {
+  padding: 0.5em;
+}
+
+figcaption {
+  display: none;
+}
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #fff;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: #fff;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: #fff;
+}
+:-moz-placeholder { /* Firefox 18- */
+  color: #fff;
 }
