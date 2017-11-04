@@ -236,7 +236,7 @@ figcaption {
   }
 
   header.apresentacao{
-    height: 57em;
+    height: 53.45em;
     padding-top: 10em;
   }
 
@@ -248,10 +248,11 @@ figcaption {
   header.apresentacao .campos input, 
   header.apresentacao .campos textarea  {
     padding: 0.4em 0.3em 0.4em 2.2em;
+    font-size: 12pt;
   }
 
   header.apresentacao .campos > div > img{
-    top: 1.28em;
+    top: 0.8em;
   }
 
   header.apresentacao .note{
@@ -261,6 +262,8 @@ figcaption {
 
   header.apresentacao .note img{
     width: 35em;
+    z-index: 3;
+    position: relative;
   }
 
   .campos .divide {
@@ -280,5 +283,15 @@ figcaption {
     display: inline-block;
     margin: 1em 0 2em;
   }
-  
+
+  .skils{
+    display: flex;
+  }
+
+  .skils > div{
+    z-index: 0;
+    background: #f8f8f8;
+  }
+
+
 }
