@@ -1,4 +1,11 @@
 $().ready(function () {
-  $.validator.messages.required = '';
-  $("#formulario").validate();
+  var $form = $("#formulario");
+  $form.validate();
+
+  $form.submit(function () {
+    if ($form.valid()) {
+      alert('Enviado!');
+    }
+
+  });
 });

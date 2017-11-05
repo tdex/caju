@@ -209,7 +209,11 @@ footer {
 }
 
 footer>* {
-  padding: 0.5em;
+  padding: 1.5em 0;
+}
+
+footer .mobile > * {
+  padding:0.3em;
 }
 
 figcaption {
@@ -254,6 +258,10 @@ footer .desktop {
     background: none;
     width: 100%;
   }
+  nav.menu > div{
+    max-width: 960px;
+    margin: 0 auto;
+  }
   nav.menu ul {
     list-style: none;
   }
@@ -270,9 +278,17 @@ footer .desktop {
   nav.menu ul,
   nav.menu ul li,
   nav.menu span,
-  nav.menu>a {
+  nav.menu div a,
+  nav.menu > div> div {
     display: inline-block;
-    padding: 1em;
+    padding: 1em 0.4em;
+  }
+  nav.menu #home{
+    padding: 3.2em 0;
+  }
+  nav.menu #itens{
+    float: right;
+    padding: 0.2em 0;
   }
   header.apresentacao {
     height: 53.45em;
@@ -435,4 +451,6 @@ footer .desktop {
     position: relative;
     right: -3em
   }
+
+
 }
