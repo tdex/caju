@@ -58,7 +58,7 @@ label.error {
 
 label.error {
   text-align: left;
-  display: block;
+  display: none !important;
 }
 
 header.apresentacao .campos input.error {
@@ -87,11 +87,11 @@ header.apresentacao .campos input[type="submit"] {
   opacity: 1;
 }
 
-header.apresentacao .campos>div {
+header.apresentacao .campos div {
   position: relative;
 }
 
-header.apresentacao .campos>div>img {
+header.apresentacao .campos>div img {
   position: absolute;
   z-index: 2;
   top: 1.7em;
@@ -257,8 +257,15 @@ footer .desktop {
   nav.menu ul {
     list-style: none;
   }
-  nav.menu>a {
+  nav.menu a {
     text-decoration: none;
+    color: #7d848a;
+    font-weight: 400;
+    font-size: 12pt;
+  }
+  nav.menu a:hover{
+    color: #6fa5f7;
+    font-weight: 600;
   }
   nav.menu ul,
   nav.menu ul li,
@@ -282,9 +289,6 @@ footer .desktop {
     max-width: 100%;
     max-height: 4.55em;
   }
-  header.apresentacao .campos>div>img {
-    top: 0.8em;
-  }
   header.apresentacao .note {
     display: block;
     margin: 1em;
@@ -294,15 +298,23 @@ footer .desktop {
     z-index: 3;
     position: relative;
   }
-  .campos .divide {
-    width: 50%;
-    float: left;
+  header.apresentacao .campos .divide {
+    display: flex
   }
-  .divide:nth-child(2) {
+  header.apresentacao .divide >div{
+    position: relative;
+  }
+  header.apresentacao .divide >div:nth-child(1) {
     padding-right: 0.25em;
   }
-  .divide:nth-child(3) {
+  header.apresentacao .divide >div:nth-child(2) {
     padding-left: 0.25em;
+  }
+  header.apresentacao .campos>div>img {
+    top: 0.8em;
+  }
+  header.apresentacao .campos .divide div>img{
+    top: 1em;
   }
   header.apresentacao section p {
     width: 26em;

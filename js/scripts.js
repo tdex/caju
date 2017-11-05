@@ -1,8 +1,4 @@
-$().ready(function() {
-  $("#formulario").validate({
-    messages: {
-      nome: 'Campo Obrigatório!',
-      email: 'Por favor insira um e-mail válido!'
-    }
-  });
+$().ready(function () {
+  $.validator.messages.required = '';
+  $("#formulario").validate();
 });
