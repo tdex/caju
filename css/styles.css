@@ -290,6 +290,9 @@ footer .desktop {
     float: right;
     padding: 0.2em 0;
   }
+  nav.menu .phone a{
+    color: #6fa5f7;
+  }
   header.apresentacao {
     height: 53.45em;
     padding-top: 10em;

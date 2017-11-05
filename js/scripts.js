@@ -6,6 +6,5 @@ $().ready(function () {
     if ($form.valid()) {
       alert('Enviado!');
     }
-
   });
 });
