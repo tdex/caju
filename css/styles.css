@@ -1,17 +1,19 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans|Source+Sans+Pro');
-
-*{
+* {
   box-sizing: border-box;
   margin: 0;
 }
 
-body{
+body {
   font-family: 'Open Sans', sans-serif;
   padding: 0;
   margin: 0 auto;
 }
 
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
   font-family: 'Open Sans', sans-serif;
   font-weight: 500;
 }
@@ -19,8 +21,6 @@ h1, h2, h3, h4 {
 nav.menu {
   background: #222426;
 }
-
-
 
 header.apresentacao {
   background-image: url('../img/header/bg.png');
@@ -44,14 +44,14 @@ header.apresentacao section p {
   font-size: 9.51pt;
 }
 
-header.apresentacao form > span {
+header.apresentacao form>span {
   color: #5d81b6;
   font-style: italic;
   font-size: 8.9pt;
 }
 
-header.apresentacao .campos input, 
-header.apresentacao .campos textarea  {
+header.apresentacao .campos input,
+header.apresentacao .campos textarea {
   width: 100%;
   margin: 0.3em 0;
   padding: 0.8em 0.3em 0.8em 2.2em;
@@ -72,11 +72,11 @@ header.apresentacao .campos input[type="submit"] {
   opacity: 1;
 }
 
-header.apresentacao .campos > div{
+header.apresentacao .campos>div {
   position: relative;
 }
 
-header.apresentacao .campos > div > img{
+header.apresentacao .campos>div>img {
   position: absolute;
   z-index: 2;
   top: 1.7em;
@@ -84,11 +84,12 @@ header.apresentacao .campos > div > img{
   pointer-events: none;
 }
 
-header.apresentacao .note{
+header.apresentacao .note {
   display: none;
 }
 
-.apresentacao, main {
+.apresentacao,
+main {
   padding: 1em;
 }
 
@@ -101,42 +102,43 @@ h2 {
   text-align: center;
 }
 
-.diferenciais > header > h2{
+.diferenciais>header>h2 {
   font-size: 21.5pt;
 }
 
-.diferenciais > header p,
-.diferenciais > header span {
+.diferenciais>header p,
+.diferenciais>header span {
   font-size: 12pt;
   text-align: center;
   display: inherit;
 }
 
-.diferenciais > header p{
+.diferenciais>header p {
   font-weight: bold;
   color: #555a69;
 }
-.diferenciais > header span{
+
+.diferenciais>header span {
   color: #899097;
 }
 
-.diferenciais .dif-boxes > div {
+.diferenciais .dif-boxes>div {
   padding: 4em 1em;
   color: #fff;
   margin: 1em 0;
   position: relative;
 }
 
-.diferenciais .dif-boxes > div h3{
+.diferenciais .dif-boxes>div h3 {
   font-size: 24pt;
 }
 
-.diferenciais .dif-boxes > div p{
+.diferenciais .dif-boxes>div p {
   font-size: 11pt;
   margin: 2em 0 0;
 }
 
-.diferenciais .dif-boxes > div .number {
+.diferenciais .dif-boxes>div .number {
   position: absolute;
   padding: 0.3em 0.7em;
   background: rgba(166, 189, 189, 0.8);
@@ -147,13 +149,15 @@ h2 {
   font-weight: 800;
 }
 
-.diferenciais .dif-boxes > div:nth-child(1){
+.diferenciais .dif-boxes>div:nth-child(1) {
   background: #3598c1;
 }
-.diferenciais .dif-boxes > div:nth-child(2){
+
+.diferenciais .dif-boxes>div:nth-child(2) {
   background: #414a53;
 }
-.diferenciais .dif-boxes > div:nth-child(3){
+
+.diferenciais .dif-boxes>div:nth-child(3) {
   background: #8161e7;
 }
 
@@ -162,21 +166,22 @@ h2 {
   text-align: left;
 }
 
-.servicos .slide > div {
+.servicos .slide>div {
   background: #f8f8f8;
   border: 1px solid #efeeee;
   padding: 1.5em 1.5em 2em;
   margin: 1em 0;
 }
 
-.servicos .slide > div > h4 {
+.servicos .slide>div>h4 {
   color: #6fa5f7;
   font-weight: 600;
   font-size: 18pt;
   width: 80%;
   margin: 0.2em 0 1.5em 0;
 }
-.servicos .slide > div > p {
+
+.servicos .slide>div>p {
   color: #7e7e7e;
   font-size: 14pt;
   line-height: 2em;
@@ -188,7 +193,7 @@ footer {
   text-align: center;
 }
 
-footer > * {
+footer>* {
   padding: 0.5em;
 }
 
@@ -196,102 +201,127 @@ figcaption {
   display: none;
 }
 
-::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
   color: #fff;
 }
-::-moz-placeholder { /* Firefox 19+ */
+
+::-moz-placeholder {
+  /* Firefox 19+ */
   color: #fff;
 }
-:-ms-input-placeholder { /* IE 10+ */
+
+:-ms-input-placeholder {
+  /* IE 10+ */
   color: #fff;
 }
-:-moz-placeholder { /* Firefox 18- */
+
+:-moz-placeholder {
+  /* Firefox 18- */
   color: #fff;
 }
 
 @media only screen and (min-width: 768px) {
-  .diferenciais, .servicos {
+  .diferenciais,
+  .servicos {
     max-width: 960px;
     margin: 0 auto;
   }
-
-  .content{
+  .content {
     position: relative;
   }
-  nav.menu{
+  nav.menu {
     position: absolute;
     background: none;
     width: 100vh;
   }
-  nav.menu ul{
+  nav.menu ul {
     list-style: none;
   }
-  nav.menu a{
+  nav.menu a {
     text-decoration: none;
   }
-  nav.menu ul, 
-  nav.menu ul li, 
+  nav.menu ul,
+  nav.menu ul li,
   nav.menu span {
     display: inline-block;
   }
-
-  header.apresentacao{
+  header.apresentacao {
     height: 53.45em;
     padding-top: 10em;
   }
-
   header.apresentacao .campos {
     width: 25em;
     margin: 0 auto;
   }
-
-  header.apresentacao .campos input, 
-  header.apresentacao .campos textarea  {
+  header.apresentacao .campos input,
+  header.apresentacao .campos textarea {
     padding: 0.4em 0.3em 0.4em 2.2em;
     font-size: 12pt;
   }
-
-  header.apresentacao .campos > div > img{
+  header.apresentacao .campos>div>img {
     top: 0.8em;
   }
-
-  header.apresentacao .note{
+  header.apresentacao .note {
     display: block;
     margin: 1em;
   }
-
-  header.apresentacao .note img{
+  header.apresentacao .note img {
     width: 35em;
     z-index: 3;
     position: relative;
   }
-
   .campos .divide {
     width: 50%;
     float: left;
   }
-
-  .divide:nth-child(2){
+  .divide:nth-child(2) {
     padding-right: 0.25em;
   }
-  .divide:nth-child(3){
+  .divide:nth-child(3) {
     padding-left: 0.25em;
   }
-
-  header.apresentacao section p{
+  header.apresentacao section p {
     width: 26em;
     display: inline-block;
     margin: 1em 0 2em;
   }
-
-  .skils{
+  .skils {
     display: flex;
+    text-align: center;
   }
-
-  .skils > div{
+  .skils>div {
     z-index: 0;
+    flex: 1;
     background: #f8f8f8;
+    border-left: 1px solid #dddddd;
   }
-
-
+  .skils>div:first-child {
+    border-left: none;
+  }
+  .skils h3 {
+    color: #6fa5f7;
+    padding-top: 1em;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 600;
+  }
+  .skils p {
+    color: #7e7e7e;
+    font-size: 12pt;
+    padding: 1em;
+  }
+  .skils figure img {
+    height: 5em;
+    margin-top: 2em;
+  }
+  .diferenciais header {
+    width: 28em;
+    display: block;
+    text-align: center;
+    margin: 4em auto 4em;
+  }
+  .diferenciais header h2 {
+    width: 15em;
+    margin: 0 auto 1em;
+  }
 }
