@@ -122,23 +122,23 @@ h2 {
   color: #899097;
 }
 
-.diferenciais .dif-boxes>div {
+.diferenciais .dif-boxes .box {
   padding: 4em 1em;
   color: #fff;
   margin: 1em 0;
   position: relative;
 }
 
-.diferenciais .dif-boxes>div h3 {
+.diferenciais .dif-boxes .box h3 {
   font-size: 24pt;
 }
 
-.diferenciais .dif-boxes>div p {
+.diferenciais .dif-boxes .box p {
   font-size: 11pt;
   margin: 2em 0 0;
 }
 
-.diferenciais .dif-boxes>div .number {
+.diferenciais .dif-boxes .box .number {
   position: absolute;
   padding: 0.3em 0.7em;
   background: rgba(166, 189, 189, 0.8);
@@ -149,15 +149,15 @@ h2 {
   font-weight: 800;
 }
 
-.diferenciais .dif-boxes>div:nth-child(1) {
+.diferenciais .dif-boxes .dif1 {
   background: #3598c1;
 }
 
-.diferenciais .dif-boxes>div:nth-child(2) {
+.diferenciais .dif-boxes .dif2 {
   background: #414a53;
 }
 
-.diferenciais .dif-boxes>div:nth-child(3) {
+.diferenciais .dif-boxes .dif3 {
   background: #8161e7;
 }
 
@@ -323,5 +323,21 @@ figcaption {
   .diferenciais header h2 {
     width: 15em;
     margin: 0 auto 1em;
+  }
+  .diferenciais .dif-boxes {
+    display: flex;
+    flex-direction: row;
+  }
+  .diferenciais .dif-boxes .dif3{
+    margin-left: 1em;
+    flex: 50%;
+    background-image: url('../img/diferenciais/medical.png');
+    background-position: -104px -106px;
+  }
+  .diferenciais .dif-boxes .coluna{
+    flex: 50%;
+  }
+  .diferenciais .dif-boxes .box{
+    padding: 7em 3em 5em;
   }
 }
