@@ -7,4 +7,13 @@ $().ready(function () {
       alert('Enviado!');
     }
   });
+
+  $('#menu-button').click(function () {
+    if ($('#itens:visible').length == 0) {
+      $('#itens').show();
+    } else {
+      $('#itens').hide();
+    }
+  });
+
 });
