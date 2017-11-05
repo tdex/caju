@@ -25,11 +25,9 @@ a {
 
 nav.menu {
   background: #222426;
-  /* text-align: center; */
-  /* position: relative; */
 }
 
-nav.menu #itens{
+nav.menu #itens {
   display: none;
 }
 
@@ -38,30 +36,31 @@ nav.menu ul {
   padding: 0;
 }
 
-nav.menu span.phone{
+nav.menu span.phone {
   position: relative;
 }
 
-nav.menu li a, 
-nav.menu span.phone a{
+nav.menu li a,
+nav.menu span.phone a {
   display: block;
   padding: 1em;
   text-align: center;
   color: #7d848a;
   border-top: 1px solid;
 }
-nav.menu #home{
+
+nav.menu #home {
   display: inline-block;
   padding: 3em;
 }
 
-nav.menu #home img{
+nav.menu #home img {
   width: 8em;
 }
 
-nav.menu #menu-button{
+nav.menu #menu-button {
   color: white;
-  display: inline-block;
+  display: block;
   font-size: 4.25em;
   float: right;
   padding: 0.3em 0.5em;
@@ -255,8 +254,8 @@ footer>* {
   padding: 1.5em 0;
 }
 
-footer .mobile > * {
-  padding:0.3em;
+footer .mobile>* {
+  padding: 0.3em;
 }
 
 figcaption {
@@ -268,22 +267,18 @@ footer .desktop {
 }
 
 ::-webkit-input-placeholder {
-  /* Chrome/Opera/Safari */
   color: #fff;
 }
 
 ::-moz-placeholder {
-  /* Firefox 19+ */
   color: #fff;
 }
 
 :-ms-input-placeholder {
-  /* IE 10+ */
   color: #fff;
 }
 
 :-moz-placeholder {
-  /* Firefox 18- */
   color: #fff;
 }
 
@@ -301,24 +296,24 @@ footer .desktop {
     background: none;
     width: 100%;
   }
-  nav.menu #home img{
+  nav.menu #home img {
     width: inherit;
   }
-  nav.menu #menu-button{
+  nav.menu #menu-button {
     display: none;
   }
-  nav.menu #itens{
+  nav.menu #itens {
     display: inherit !important;
   }
-  nav.menu > div{
+  nav.menu>div {
     max-width: 960px;
     margin: 0 auto;
   }
   nav.menu ul {
     list-style: none;
   }
-  nav.menu li a, 
-  nav.menu span.phone a{
+  nav.menu li a,
+  nav.menu span.phone a {
     border: none;
   }
   nav.menu a {
@@ -327,7 +322,7 @@ footer .desktop {
     font-weight: 400;
     font-size: 12pt;
   }
-  nav.menu a:hover{
+  nav.menu a:hover {
     color: #6fa5f7;
     font-weight: 600;
   }
@@ -335,19 +330,19 @@ footer .desktop {
   nav.menu ul li,
   nav.menu span,
   nav.menu div a,
-  nav.menu > div> div {
+  nav.menu>div>div {
     display: inline-block;
     padding: 1em 0.4em;
   }
-  nav.menu #home{
+  nav.menu #home {
     padding: 3.2em 0;
     float: left;
   }
-  nav.menu #itens{
+  nav.menu #itens {
     float: right;
     padding: 0.2em 0;
   }
-  nav.menu .phone a{
+  nav.menu .phone a {
     color: #6fa5f7 !important;
   }
   header.apresentacao {
@@ -377,22 +372,22 @@ footer .desktop {
   header.apresentacao .campos .divide {
     display: flex
   }
-  header.apresentacao .divide >div{
+  header.apresentacao .divide>div {
     position: relative;
   }
-  header.apresentacao .divide >div:nth-child(1) {
+  header.apresentacao .divide>div:nth-child(1) {
     padding-right: 0.25em;
   }
-  header.apresentacao .divide >div:nth-child(2) {
+  header.apresentacao .divide>div:nth-child(2) {
     padding-left: 0.25em;
   }
   header.apresentacao .campos>div>img {
     top: 0.8em;
   }
-  header.apresentacao .campos .divide div>img{
+  header.apresentacao .campos .divide div>img {
     top: 1em;
   }
-  header.apresentacao form>span{
+  header.apresentacao form>span {
     margin-bottom: 0.5em
   }
   header.apresentacao section p {
@@ -514,5 +509,4 @@ footer .desktop {
     position: relative;
     right: -3em
   }
-
 }
