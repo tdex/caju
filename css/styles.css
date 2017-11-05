@@ -25,6 +25,30 @@ a {
 
 nav.menu {
   background: #222426;
+  /* text-align: center; */
+  /* position: relative; */
+}
+
+nav.menu #itens{
+  display: none;
+}
+
+nav.menu #home{
+  display: inline-block;
+  padding: 3em;
+}
+
+nav.menu #home img{
+  width: 8em;
+}
+
+nav.menu #menu-button{
+  color: white;
+  display: inline-block;
+  font-size: 4.25em;
+  float: right;
+  margin-top: 0.25em;
+  margin-right: 0.45em;
 }
 
 header.apresentacao {
@@ -47,13 +71,15 @@ header.apresentacao section p {
   color: #7d848a;
   font-weight: lighter;
   font-size: 9.51pt;
+  margin: 1em;
 }
 
-header.apresentacao form>span,
-label.error {
+header.apresentacao form>span {
   color: #5d81b6;
   font-style: italic;
   font-size: 8.9pt;
+  margin: 1em;
+  display: block;
 }
 
 label.error {
@@ -119,6 +145,7 @@ h2 {
 
 .diferenciais>header>h2 {
   font-size: 21.5pt;
+  margin: 1em 0;
 }
 
 .diferenciais>header p,
@@ -258,6 +285,15 @@ footer .desktop {
     background: none;
     width: 100%;
   }
+  nav.menu #home img{
+    width: inherit;
+  }
+  nav.menu #menu-button{
+    display: none;
+  }
+  nav.menu #itens{
+    display: inherit;
+  }
   nav.menu > div{
     max-width: 960px;
     margin: 0 auto;
@@ -285,6 +321,7 @@ footer .desktop {
   }
   nav.menu #home{
     padding: 3.2em 0;
+    float: left;
   }
   nav.menu #itens{
     float: right;
@@ -335,10 +372,13 @@ footer .desktop {
   header.apresentacao .campos .divide div>img{
     top: 1em;
   }
+  header.apresentacao form>span{
+    margin-bottom: 0.5em
+  }
   header.apresentacao section p {
     width: 26em;
     display: inline-block;
-    margin: 1em 0 2em;
+    margin: 1em 0 0.7em;
   }
   .skils {
     display: flex;
@@ -454,6 +494,4 @@ footer .desktop {
     position: relative;
     right: -3em
   }
-
-
 }
