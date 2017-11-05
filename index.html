@@ -14,28 +14,30 @@
 <body>
   <div class="content">
     <nav class="menu">
-      <figure>
-        <img src="img/footer/caju.png" alt="CAJU">
-        <figcaption>CAJU Tecnologia</figcaption>
-      </figure>
+      <a href="" title="CAJU">
+        <figure>
+          <img src="img/footer/caju.png" alt="CAJU">
+          <figcaption>CAJU Tecnologia</figcaption>
+        </figure>
+      </a>
 
       <ul>
         <li>
-          <a href="#">Conheça</a>
+          <a href="#" title="Conheça">Conheça</a>
         </li>
         <li>
-          <a href="#">Vantagens</a>
+          <a href="#" title="Vantagens">Vantagens</a>
         </li>
         <li>
-          <a href="#">Cases</a>
+          <a href="#" title="Cases">Cases</a>
         </li>
         <li>
-          <a href="#">Fale Conosco</a>
+          <a href="#" title="Fale Conosco">Fale Conosco</a>
         </li>
       </ul>
 
       <span>
-        <a href="tel:+558887601940">+55 (888) 760 1940</a>
+        <a href="tel:+558887601940" title="Contato">+55 (888) 760 1940</a>
       </span>
     </nav>
 
@@ -45,16 +47,16 @@
         <h1>Better Lorem Ipsum</h1>
         <p>O teste é uma ferramenta projetada para organizações que desejam crescer otimizando recursos.</p>
 
-        <form action="enviar()" method="post">
+        <form action="" method="post" id="formulario">
           <span>Os campos com ( * ) são de obrigatoriedade.</span>
           <div class="campos">
             <div>
               <img src="img/header/icon-nome.png" alt="">
-              <input type="text" name="nome" id="nome" placeholder="NOME*">
+              <input type="text" name="nome" id="nome" placeholder="NOME*" required>
             </div>
             <div class="divide">
               <img src="img/header/icon-email.png" alt="">
-              <input type="email" name="email" id="email" placeholder="E-MAIL*">
+              <input type="email" name="email" id="email" placeholder="E-MAIL*" required>
             </div>
             <div class="divide">
               <img src="img/header/icon-phone.png" alt="">
@@ -64,7 +66,7 @@
               <img src="img/header/icon-mensagem.png" alt="">
               <textarea name="mensagem" id="mensagem" cols="30" rows="3" placeholder="MENSAGEM"></textarea>
             </div>
-            <input type="submit" value="ENVIAR">
+            <input type="submit" value="ENVIAR" title="Enviar">
           </div>
         </form>
 
@@ -124,8 +126,7 @@
             <div class="box dif1">
               <div class="number">1</div>
               <h3>Pensado para ser amigável</h3>
-              <p>Speed up the line with quick, easy modifiers Light soy, extra noodles--item modifiers make it simple and efficient
-                to get your customers' orders just right.</p>
+              <p>Speed up the line with quick, easy modifiers Light soy, extra noodles--item modifiers make it simple and efficient to get your customers' orders just right.</p>
             </div>
             <div class="box dif2">
               <div class="number">2</div>
@@ -136,11 +137,8 @@
           <div class="box dif3">
             <div class="number">3</div>
             <h3>Focado em processos</h3>
-            <p>Speed up the line with quick, easy modifiers Light soy, extra noodles--item modifiers make it simple and efficient
-              to get your customers' orders just right.</p>
-            <p>Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado
-              desde o século XVI, quando um impressor desconhecido pegou uma bandeja de tipos e os embaralhou para fazer
-              um livro.
+            <p>Speed up the line with quick, easy modifiers Light soy, extra noodles--item modifiers make it simple and efficient to get your customers' orders just right.</p>
+            <p>Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja de tipos e os embaralhou para fazer um livro.
             </p>
           </div>
         </article>
@@ -170,15 +168,44 @@
     </main>
 
     <footer>
-      <p>&copy; 2015 Caju Tecnologia</p>
-      <figure>
-        <img src="img/footer/social.png" alt="redes sociais">
-        <figcaption>Redes sociais CAJU</figcaption>
-      </figure>
-      <figure>
-        <img src="img/footer/caju.png" alt="CAJU">
-        <figcaption>CAJU tecnologia</figcaption>
-      </figure>
+      <div class="mobile">
+        <p>&copy; 2015 Caju Tecnologia</p>
+        <figure>
+          <img src="img/footer/social.png" alt="redes sociais">
+          <figcaption>Redes sociais CAJU</figcaption>
+        </figure>
+        <figure>
+          <img src="img/footer/caju.png" alt="CAJU">
+          <figcaption>CAJU tecnologia</figcaption>
+        </figure>
+      </div>
+      <div class="desktop">
+        <div>
+          <p>&copy; 2015 Caju Tecnologia</p>
+        </div>
+        <div>
+          <a href="#" title="Facebook">
+            <img src="img/footer/face.png" alt="facebook">
+          </a>
+          <a href="#" title="Google+">
+            <img src="img/footer/gplus.png" alt="google+">
+          </a>
+          <p>Redes Sociais</p>
+        </div>
+        <div>
+          <a href="mailto:caju@email.com" title="E-mail">
+            <img src="img/footer/mail.png" alt="Email"> E-mail: teste@caju.com.br
+          </a>
+        </div>
+        <div>
+          <a href="tel:+558132121546" title="Contato">
+            <img src="img/footer/phone.png" alt="Telefone"> +55 (81) 3212-1546
+          </a>
+        </div>
+        <div>
+          <img src="img/footer/caju2.png" alt="CAJU">
+        </div>
+      </div>
     </footer>
   </div>
 

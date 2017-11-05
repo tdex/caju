@@ -18,6 +18,11 @@ h4 {
   font-weight: 500;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
 nav.menu {
   background: #222426;
 }
@@ -44,10 +49,20 @@ header.apresentacao section p {
   font-size: 9.51pt;
 }
 
-header.apresentacao form>span {
+header.apresentacao form>span,
+label.error {
   color: #5d81b6;
   font-style: italic;
   font-size: 8.9pt;
+}
+
+label.error {
+  text-align: left;
+  display: block;
+}
+
+header.apresentacao .campos input.error {
+  border: 1px solid red;
 }
 
 header.apresentacao .campos input,
@@ -201,6 +216,10 @@ figcaption {
   display: none;
 }
 
+footer .desktop {
+  display: none;
+}
+
 ::-webkit-input-placeholder {
   /* Chrome/Opera/Safari */
   color: #fff;
@@ -233,18 +252,20 @@ figcaption {
   nav.menu {
     position: absolute;
     background: none;
-    width: 100vh;
+    width: 100%;
   }
   nav.menu ul {
     list-style: none;
   }
-  nav.menu a {
+  nav.menu>a {
     text-decoration: none;
   }
   nav.menu ul,
   nav.menu ul li,
-  nav.menu span {
+  nav.menu span,
+  nav.menu>a {
     display: inline-block;
+    padding: 1em;
   }
   header.apresentacao {
     height: 53.45em;
@@ -258,6 +279,8 @@ figcaption {
   header.apresentacao .campos textarea {
     padding: 0.4em 0.3em 0.4em 2.2em;
     font-size: 12pt;
+    max-width: 100%;
+    max-height: 4.55em;
   }
   header.apresentacao .campos>div>img {
     top: 0.8em;
@@ -328,16 +351,76 @@ figcaption {
     display: flex;
     flex-direction: row;
   }
-  .diferenciais .dif-boxes .dif3{
+  .diferenciais .dif-boxes .dif3 {
     margin-left: 1em;
     flex: 50%;
     background-image: url('../img/diferenciais/medical.png');
     background-position: -104px -106px;
   }
-  .diferenciais .dif-boxes .coluna{
+  .diferenciais .dif-boxes .coluna {
     flex: 50%;
   }
-  .diferenciais .dif-boxes .box{
+  .diferenciais .dif-boxes .box {
     padding: 7em 3em 5em;
+  }
+  .servicos h2 {
+    text-align: center;
+    margin: 2.5em 0 1em;
+  }
+  .servicos .slide {
+    display: flex;
+  }
+  .servicos .slide>div {
+    margin: 0.5em;
+  }
+  .servicos .slide>div:first-child {
+    margin-left: 0;
+  }
+  .servicos .slide>div:last-child {
+    margin-right: 0;
+  }
+  .servicos .slide>div>h4 {
+    margin: 0.2em 0 0.5em 0;
+  }
+  .servicos .slide>div>p {
+    line-height: 1.5em;
+    font-size: 12pt;
+  }
+  footer .mobile {
+    display: none;
+  }
+  footer .desktop {
+    display: flex;
+    max-width: 960px;
+    margin: 3em auto 0;
+    padding: 4em 0;
+    font-size: 10pt;
+  }
+  footer .desktop>div {
+    display: inline-flex;
+    max-width: 960px;
+  }
+  footer .desktop img {
+    height: 1em;
+    margin-right: 0.2em
+  }
+  footer .desktop>div:nth-child(1) {
+    flex: 6;
+  }
+  footer .desktop>div:nth-child(2) {
+    flex: 2;
+  }
+  footer .desktop>div:nth-child(3) {
+    flex: 3;
+  }
+  footer .desktop>div:nth-child(4) {
+    flex: 2;
+  }
+  footer .desktop>div:nth-child(5) {
+    flex: 1;
+  }
+  footer .desktop>div:nth-child(5) img {
+    position: relative;
+    right: -3em
   }
 }
